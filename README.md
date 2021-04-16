@@ -1,4 +1,3 @@
-111111111111111111111111111111111111111111111111111111111111111111
 ==================================================================
 Software Abstract
 
@@ -9,11 +8,10 @@ The software I am working with is the pytorch_connectomics package that was crea
 2) I have a couple operations that I do on large arrays with numpy that probably could be sped up by using something like numba or cupy. These are mainly preprocessing operations.
 
 
-222222222222222222222222222222222222222222222222222222222222222222
 ==================================================================
 To install the necissary requirements, run the following commands (the commands can also be run using ./installScript.sh that is in my github. It will create a projectFolder wherever the working directory is)
 
-
+```
 module load python
 
 module load CUDA
@@ -43,6 +41,8 @@ cp ../CMSE401Project/submission.sb submission.sb
 cp ../CMSE401Project/example.py example.py
 
 cp ../CMSE401Project/config.yaml configs/MyConfigProject.yaml
+```
+
 =====================================
 
 Also, please use the interactive desktop to download the following files into the pytorch_connectomics folder
@@ -56,19 +56,16 @@ https://drive.google.com/file/d/1G-Fw6DEMrUPGS2s2XPSWJpCT2yXu4ow8/view?usp=shari
 
 
 
-333333333333333333333333333333333333333333333333333333333333333333
 ==================================================================
 
 I included some example code in example.py of an array operation I may be able to speed up. You can run and time this example using the command "time python3 example.py"
 
 
-444444444444444444444444444444444444444444444444444444444444444444
 ==================================================================
 
 There is a submission script that should ask for the proper resources (including GPU) to train and then do a prediction using the neural network and some example data. A submission script is used for this since it is resource intensive and also takes a long time. If the above commands are all run you should be able to submit the job with the command "sbatch submission.sb"
 
 
-555555555555555555555555555555555555555555555555555555555555555555
 ==================================================================
 
 The pytorch_connectomics github can be found at https://github.com/zudi-lin/pytorch_connectomics
